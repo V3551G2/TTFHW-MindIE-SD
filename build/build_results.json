@@ -1,0 +1,36 @@
+{
+  "build": {
+    "total_time": 57.69,
+    "phases": {
+      "protobuf_generation": 1.09,
+      "wheel_build": 0.54
+    },
+    "observability_build": {
+      "total_time": 8.08,
+      "wheel_build": 8.08
+    }
+  },
+  "Incremental build": {
+    "first_build": 57.48,
+    "second_build": 57.45,
+    "total_time": 114.93,
+    "cache_statistics": {
+      "cache_hit": 0,
+      "cache_miss": 2,
+      "cache_hit_rate": 0,
+      "speedup_percentage": 0.05,
+      "note": "Python wheel builds don't use ccache (no C/C++ compilation). The builds take similar time as Python bytecode needs to be recompiled."
+    }
+  },
+  "UT": {
+    "total_time": 68.51,
+    "test_results": {
+      "passed": 0,
+      "failed": 0,
+      "errors": 39,
+      "skipped": 0
+    },
+    "note": "UT tests collection errors due to import issues in Docker environment. The test framework is installed but certain modules cannot be imported."
+  },
+  "dependencies_install_time": 56.57
+}
